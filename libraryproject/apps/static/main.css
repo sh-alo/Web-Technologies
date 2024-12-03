@@ -1,0 +1,21 @@
+/* مثال لـ main.css */
+
+body {
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+a {
+    display: block; /* عرض ككتلة */
+    padding: 10px;
+    color: #fff; /* لون النص */
+    background-color: #007BFF; /* لون الخلفية */
+}
+
+a:hover {
+    background-color: #0056b3; /* لون الخلفية عند التمرير */
+}
+
+a:visited {
+    color: #6c757d; /* لون النص عند الزيارة */
+}

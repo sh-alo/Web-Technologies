@@ -1,0 +1,27 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+
+{% block title %}My First Index HTML Page{% endblock title %}
+
+{% block content %}
+    <div class="topnav">
+        <a class="active" href="{% url 'index' %}">Home</a>
+        <a href="{% url 'list_books' %}">List Books</a>
+        <a href="{% url 'aboutus' %}">About</a>
+    </div>
+
+    <h1 style="color: blue;">This is heading 1 (Library)</h1> <!-- إضافة تنسيق CSS مباشر -->
+    <p style="color: white; background-color: black;">This is a paragraph text</p> <!-- إضافة تنسيق CSS مباشر -->
+
+    <a href="https://www.w3schools.com/html/default.asp">Click Here to learn more about HTML & CSS</a>
+    <hr>
+
+    <!-- هذا تعليق في HTML، لن يتم عرضه في المتصفح -->
+    <h2>This is heading 2</h2>
+    <p>This is some other text.<br/>with newline<br/>and another line</p>
+    <hr>
+
+    <h2>This is heading 2</h2>
+    <p>This is some other text.</p>
+{% endblock content %}
+
